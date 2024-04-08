@@ -1,11 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
+import {MatCardModule} from '@angular/material/card';
 @Component({
   selector: 'app-carts',
   standalone: true,
-  imports: [],
+  imports: [MatCardModule],
   templateUrl: './carts.component.html',
   styleUrl: './carts.component.css',
 })
