@@ -3,3 +3,9 @@
 <button>
   <a routerLink="/carts">Check Carts</a>
 </button>
+
+<button (click)="getData()"> Hit API</button>
+
+@for(item of items; track item; let index = $index){
+  <div>{{index}}. {{item.title}}</div>
+}
